@@ -11,7 +11,7 @@ class LandingPage extends Component {
             <div className="container">
               <div className="row">
                 <h1 className="header white-text landing-title">
-                  The Crazy Cactus
+                  The Crazy Cactus.
                 </h1>
                 <h3 className="header col s12 light blue-grey-text text-lighten-5">
                   Cacti, Succulents, & Some Other Cool Stuff, too.
@@ -21,12 +21,12 @@ class LandingPage extends Component {
               <div className="row">
                 <Link
                   to="/products"
-                  className="btn-large  waves-effect waves-light teal lighten-2">
+                  className="btn-large  waves-effect waves-light teal">
                   Our Products
                 </Link>
                 <Link
-                  to="/"
-                  className="btn-large waves-effect waves-light teal lighten-2">
+                  to="/locations"
+                  className="btn-large waves-effect waves-light teal">
                   Come Visit Us
                 </Link>
               </div>

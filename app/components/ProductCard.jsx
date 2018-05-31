@@ -11,7 +11,8 @@ class ProductCard extends Component {
           <div className="col s12 m6">
             <div className="card">
               <div className="card-image">
-                <img src="https://i.imgur.com/Ei1fqhd.jpg" />
+                {/* <img src="https://i.imgur.com/Ei1fqhd.jpg" /> */}
+                <img src={product.imgUrl} />
                 <a className="btn-floating btn-large halfway-fab waves-effect waves-light teal">
                   <i className="material-icons">add_shopping_cart</i>
                 </a>
