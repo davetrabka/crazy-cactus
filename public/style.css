@@ -3,7 +3,7 @@
 }
 
 .side-by-side {
-  max-width: 320px;
+  max-width: 300px;
 }
 
 .landing-title {
@@ -22,6 +22,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.floating-side-nav {
+  position: fixed;
+  width: 220px;
+  top: 13%;
+  left: 13%;
+}
+
+.floating-nav-title:after {
+  display: block;
+  height: 3px;
+  width: 100px;
+  background-color: #fff;
+  content: '';
+  margin: 15px auto;
+  padding-left: 24px;
+}
+
+.side-nav-li .btn-small {
+  margin: 5px auto;
+  width: 165px;
 }
 
 /*!
@@ -2193,7 +2215,7 @@ body {
     url(https://images.unsplash.com/photo-1520302829139-fa0d91dc51aa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c77177a025b021dbbe82321219b04a7&auto=format&fit=crop&w=2100&q=80);
   background-size: cover;
   background-position: center;
-  height: 125vh;
+  height: 100vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -2853,7 +2875,6 @@ video.responsive-video {
   overflow: hidden;
   height: 82vh;
   margin-top: 70px;
- 
 }
 
 .parallax-container .parallax {
@@ -2865,9 +2886,6 @@ video.responsive-video {
   z-index: 1;
 }
 
-.parallax {
-  background-color: #000;
-}
 
 .parallax img {
   opacity: .5;
@@ -2890,9 +2908,9 @@ video.responsive-video {
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 125vw;
+  width: 100vw;
   min-width: 100vw;
-  min-height: 100vh;
+  max-height: 100vh;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
@@ -3494,8 +3512,8 @@ table span.badge {
 }
 
 .floating-container {
-  margin: 40px auto 50px auto;
-  width: 95%;
+  margin: 40px auto 30px auto;
+  width: 90%;
   min-height: 80vh;
   background-color: #e7e7e7ea;
   border: 3px solid #a5a5a5;
@@ -4357,7 +4375,7 @@ nav {
   width: 100%;
   height: 56px;
   line-height: 56px;
-  margin-top: 33px;
+  margin-top: 17px;
 }
 
 nav.nav-extended {
@@ -4396,6 +4414,7 @@ nav .nav-wrapper {
   nav a.sidenav-trigger {
     display: none;
   }
+
 }
 
 nav .sidenav-trigger {
@@ -4828,7 +4847,8 @@ small {
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
-  padding: 24px;
+  padding-top: 24px;
+  padding-bottom: 50px;
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
   background-color: #fff;
@@ -4983,7 +5003,7 @@ small {
 }
 
 .card .card-content {
-  padding: 5px 45px 15px 24px;
+  padding: 5px 60px 15px 24px;
   border-radius: 0 0 2px 2px;
 }
 

@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom'
 import NavBar from './NavBar'
 import LandingPage from './LandingPage'
 import ProductList from './ProductList'
+import SignUp from './SignUp'
 
 export default class Root extends Component {
   render() {
@@ -15,6 +16,8 @@ export default class Root extends Component {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/products" component={ProductList} />
+
+            <Route exact path="/users/new" component={SignUp} />
           </Switch>
         </main>
       </React.Fragment>
